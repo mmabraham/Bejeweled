@@ -16,7 +16,7 @@ Bejeweled is a single player tile-matching puzzle game. The goal is to accumulat
 This app will consist of a main canvas for the game board, game controls,
 and a progress bar.
 
-![wireframes](wireframe.jpg)
+![wireframes](wireframe.png)
 
 ### Architecture and Technologies
 
