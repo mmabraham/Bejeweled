@@ -43,7 +43,7 @@ The game class will keep track of the general game logic.
 - remove matched jewels from the board.
 - animate the falling of the remaining jewels
 
-**Day 3**: Add game controls
+**Day 3**: Add progress controls
 
 - implement point system
 - progress bar and timer
