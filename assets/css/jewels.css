@@ -1,0 +1,59 @@
+.jewel {
+  border-radius: 50%;
+  background-color: blue;
+  width: 60px;
+  height: 60px;
+  margin: 20px;
+  position: absolute;
+  transition: top .5s linear, left .5s linear, width .5s, height .5s;
+}
+
+
+.jewel.selected {
+  animation: animate-y 3s infinite linear;
+}
+
+@keyframes animate-y {
+  0% { transform: rotateY(0); }
+  100% { transform: rotateY(360deg); }
+}
+
+.jewel:hover {
+  width: 62px;
+  height: 62px;
+  cursor: pointer;
+}
+
+.jewel.removed {
+  width: 4px;
+  height: 4px;
+  margin: 28px;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.red {
+  background-color: red;
+}
+
+.white {
+  background-color: white;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.green {
+  background-color: lightgreen;
+}
+
+.orange {
+  background-color: orange;
+}
