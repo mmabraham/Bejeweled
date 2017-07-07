@@ -1,10 +1,10 @@
 .jewel {
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   margin: 20px;
   position: absolute;
-  transition: top .5s linear, left .5s linear, width .2s, height .2s;
+  transition: top .5s ease, left .5s ease, width .2s, height .2s;
 }
 
 
@@ -19,8 +19,8 @@
 }
 
 .jewel:hover {
-  width: 45px;
-  height: 45px;
+  width: 55px;
+  height: 55px;
   cursor: pointer;
 }
 
