@@ -1,6 +1,5 @@
 .jewel {
   border-radius: 50%;
-  background-color: blue;
   width: 40px;
   height: 40px;
   margin: 20px;
@@ -10,7 +9,8 @@
 
 
 .jewel.selected {
-  animation: animate-y 3s infinite linear;
+  /*perspective: 300px;*/
+  /*animation: animate-y 3s infinite linear;*/
 }
 
 @keyframes animate-y {
@@ -31,29 +31,64 @@
 }
 
 .blue {
-  background-color: blue;
+  background-image: url('../images/blue.png');
+  background-repeat: round;
+}
+
+.blue.selected {
+  background-image: url('../images/blue.gif');
 }
 
 .yellow {
-  background-color: yellow;
+  background-image: url('../images/yellow.png');
+  background-repeat: round;
+}
+
+.yellow.selected {
+  background-image: url('../images/yellow.gif');
 }
 
 .red {
-  background-color: red;
+  background-image: url('../images/red.png');
+  background-repeat: round;
+}
+
+.red.selected {
+  background-image: url('../images/red.gif');
 }
 
 .white {
-  background-color: white;
+  background-image: url('../images/white.png');
+  background-repeat: round;
 }
 
-.purple {
-  background-color: purple;
+.white.selected {
+  background-image: url('../images/white.gif');
 }
 
-.green {
-  background-color: lightgreen;
+.pink {
+  background-image: url('../images/pink.png');
+  background-repeat: round;
+}
+
+.pink.selected {
+  background-image: url('../images/pink.gif');
 }
 
 .orange {
-  background-color: orange;
+  background-image: url('../images/orange.png');
+  background-repeat: round;
+}
+
+.orange.selected {
+  background-image: url('../images/orange.gif');
+}
+
+.green {
+  background-image: url('../images/green.png');
+  background-repeat: round;
+}
+
+.green.selected {
+  background-image: url('../images/green.gif');
 }

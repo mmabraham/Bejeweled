@@ -18,8 +18,7 @@ main {
 }
 
 #grid {
-  background-color: brown;
-  /*opacity: 0.3;*/
+  rgba(179, 133, 123, 0.56)
   width: 500px;
   height: 500px;
   border: 2px solid black;
