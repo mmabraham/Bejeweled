@@ -1,5 +1,5 @@
 ## Bejeweled
-live [live link][github_pages]
+[live link][github_pages]
 
 [github_pages]: https://mmabraham.github.io/Bejeweled/
 
