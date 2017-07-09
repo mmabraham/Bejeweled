@@ -5,6 +5,8 @@ body {
   position: fixed;
   opacity: 0.3;
   overflow: hidden;
+  height: 100%;
+  width: auto;
 }
 
 main {
@@ -12,22 +14,46 @@ main {
   padding-top: 100px;
 }
 
+main > div {
+  position: relative;
+  margin: auto;
+  width: 500px;
+}
+
 .controls {
-  background-color: wheat;
-  width: 300px;
+  /*width: 300px;*/
 }
 
 #grid {
   rgba(179, 133, 123, 0.56)
   width: 500px;
   height: 500px;
-  border: 2px solid black;
+  /*border: 2px solid black;*/
   border-radius: 5px;
   position: relative;
 }
 
 .progress-bar-container {
-  background-color: pink;
-  height: 400px;
-  width: 100%;
+  background-image: url('../images/chest_bottom.png');
+  background-repeat: round;
+  height: 243px;
+  width: 769px;
+  position: absolute;
+  bottom: -160px;
+  left: -134px;
+  z-index: -1;
+  opacity: 0.37;
+}
+
+.progress-bar {
+  width: 620px;
+  height: 30px;
+  margin: 141px auto;
+  border: 3px solid gold;
+}
+
+#progress {
+  background: #0fe018;
+  height: 100%;
+  width: 0%;
 }
