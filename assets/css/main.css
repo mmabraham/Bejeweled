@@ -29,6 +29,7 @@ main > div {
   width: 500px;
   height: 500px;
   /*border: 2px solid black;*/
+  /*background-image: url('../images/checkered.png');*/
   border-radius: 5px;
   position: relative;
 }
@@ -56,4 +57,27 @@ main > div {
   background: #0fe018;
   height: 100%;
   width: 0%;
+  transition: background-color 0.3s ease;
+}
+
+#progress.changing {
+  background-color: purple;
+}
+
+#points {
+  position: absolute;
+  display: none;
+  width: 5px;
+  height: 2px;
+  color: gold;
+  font-size: 1px;
+  transition: font 3s ease-out;
+}
+
+#points.showing {
+  display: block;
+  width:  200px;
+  height: 100px;
+  opacity: 0.7;
+  font-size: 3em;
 }
