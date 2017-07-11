@@ -7,6 +7,8 @@
 
 Bejeweled is a single player tile-matching puzzle game. The goal is to accumulate points by matching 3 or more jewels in the same column or row. Every time there is a match, all jewels in the match are removed from the grid to be replace by the jewels above them. matches are made by swapping 2 adjacent jewels.
 
+![screen shot](docs/screen_shot.png)
+
 ### Functionality
 
 - animated rendering of the game board.
