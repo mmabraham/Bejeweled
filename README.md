@@ -1,61 +1,38 @@
 ## Bejeweled
-[live link][github_pages]
+[live link][link]
 
-[github_pages]: https://mmabraham.github.io/Bejeweled/
+[link]: https://menachemabraham.com/bejeweled
 
 ### Background
 
-Bejeweled is a single player tile-matching puzzle game. The goal is to accumulate points by matching 3 or more jewels in the same column or row. Every time there is a match, all jewels in the match are removed from the grid to be replace by the jewels above them. matched are made by swapping 2 adjacent jewels.
+Bejeweled is a single player tile-matching puzzle game. The goal is to accumulate points by matching 3 or more jewels in the same column or row. Every time there is a match, all jewels in the match are removed from the grid to be replace by the jewels above them. matches are made by swapping 2 adjacent jewels.
 
-### Functionality & MVP  
+### Functionality
 
-- [ ] rendering a game board
-- [ ] swapping two adjacent jewels (If it would result in a match)
-- [ ] replacement of matched jewels with those above them
-- [ ] accumulation of points dependent on size of matches
-
-### Wireframes
-
-This app will consist of a main canvas for the game board, game controls,
-and a progress bar.
-
-![wireframes](wireframe.png)
+- animated rendering of the game board.
+- animated swapping of two adjacent jewels (If it would result in a match).
+- animated replacement of matched jewels with those above them.
+- accumulation of points dependent on size of matches.
+- recursively handling new matches caused by replacement.
+- starting a new level upon point accumulation.
+- additional jewel types in more advanced levels.
 
 ### Architecture and Technologies
 
-This project will be implemented with the following technologies:
+This project was implemented using only 'vanilla' JavaScript, html, css.
 
-- vanilla `JavaScript` for game logic,
-- `HTML5 canvas` for rendering the game board ,
+The overall structure is heavily Object Oriented:
+- The Jewel class stores properties for type, position, and reference to it's DOM element.
+- The Board class contains the nested structure of columns of jewels.
+- The game class keeps track of the general game logic.
+- The timer, progress bar, and position object are all extracted into their own classes.
+- There is also a NullJewel class for polymorphic replacement of hairy conditionals.
 
-Every type of jewel will be a class that inherits from Jewel and will have a method to draw its shape.
-the board with contain a nested array of columns of jewel objects.
-The canvas will have a click listener using arithmetic to determine the selected jewel. once two jewels are selected, they will switch, using an animation frame.
-The game class will keep track of the general game logic.
 
-### Implementation Timeline
+### Future directions
 
-**Day 1**: Setup project directory with html layout, canvas and enough js to allow for interactivity.
-
-- Render all jewel types in canvas.
-- Enable switching any 2 jewels (no logic yet)
-
-**Day 2**: Implement game logic and matching animation.
-
-- Only persist swaps that complete a match.
-- remove matched jewels from the board.
-- animate the falling of the remaining jewels
-
-**Day 3**: Add progress controls
-
-- implement point system
-- progress bar and timer
-- levels
-
-### Bonus features
-
-- [ ] add gem types for later levels
-- [ ] hint button
-- [ ] reset board in absence of possible matches
-- [ ] bonus special affect jewels
-- [ ] normal and timed game modes
+- add gem types for later levels
+- hint button
+- reset board in absence of possible matches
+- bonus special affect jewels
+- normal and timed game modes

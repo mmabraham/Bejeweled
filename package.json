@@ -18,10 +18,6 @@
   },
   "homepage": "https://github.com/mmabraham/Bejeweled#readme",
   "dependencies": {
-    "jquery": "^3.2.1",
     "webpack": "^3.0.0"
-  },
-  "devDependencies": {
-    "jasmine": "^2.6.0"
   }
 }
