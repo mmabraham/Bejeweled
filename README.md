@@ -1,7 +1,7 @@
 ## Bejeweled
 [live link][link]
 
-[link]: https://menachemabraham.com/bejeweled
+[link]:http://menachemabraham.com/Bejeweled
 
 ### Background
 
