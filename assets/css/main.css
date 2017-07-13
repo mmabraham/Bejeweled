@@ -11,7 +11,7 @@ body {
 
 main {
   display: flex;
-  padding-top: 100px;
+  padding-top: 180px;
 }
 
 main > div {
@@ -19,6 +19,12 @@ main > div {
   margin: auto;
   width: 700px;
   display: flex;
+}
+
+.logo-container {
+  position: absolute;
+  width: 640px;
+  top: -148px;
 }
 
 .controls {
@@ -39,7 +45,41 @@ main > div {
   background-color: black;
   border-radius: 20px;
   position: relative;
+  box-shadow: inset 20px -19px 48px -12px rgba(254,2,18, 0.7), inset -20px 19px 48px -12px rgba(254, 2, 18, 0.7)
+  -webkit-animation: inner-glow 20s linear infinite;
+  -moz-animation: inner-glow 20s linear infinite;
+  animation: inner-glow 20s linear infinite;
 }
+
+
+@keyframes inner-glow {
+  /*red*/
+  0%, 100% {
+    box-shadow: inset 20px -19px 48px -12px rgba(254,2,18, 0.7),
+    inset -20px 19px 48px -12px rgba(254, 2, 18, 0.7)
+  }
+  /*orange*/
+  15 {
+    box-shadow: inset 20px -19px 48px -12px rgba(254, 244, 34, 0.7),
+    inset -20px 19px 48px -12px rgba(254, 244, 34, 0.7)
+  }
+  /*yellow*/
+  30 {
+    box-shadow: inset 20px -19px 48px -12px rgba(254, 244, 34, 0.7),
+    inset -20px 19px 48px -12px rgba(254, 244, 34, 0.7)
+  }
+  36% {
+    box-shadow: inset 20px -19px 48px -12px rgba(7, 220, 29, 0.7),
+    inset -20px 19px 48px -12px rgba(7, 220, 29, 0.7)
+  }
+  55% {
+    box-shadow: inset 20px -19px 48px -12px rgba(29,137,253, 0.7),
+    inset -20px 19px 48px -12px rgba(29,137,253, 0.7)
+  }
+}
+
+/*purple*/
+/*237, 15, 237*/
 
 .progress-bar-container {
   background-image: url('../images/chest_bottom.png');
@@ -78,7 +118,7 @@ main > div {
   height: 2px;
   color: rgb(255, 215, 0);
   font-size: 0.00000001px;
-  transition: font 0.1s linear;
+  transition: font 0.15s linear;
 }
 
 #points.showing {

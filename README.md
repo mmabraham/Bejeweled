@@ -29,7 +29,23 @@ The overall structure is heavily Object Oriented:
 - The game class keeps track of the general game logic.
 - The timer, progress bar, and position object are all extracted into their own classes.
 - There is also a NullJewel class for polymorphic replacement of hairy conditionals.
+- The animation affects are kept separate from the core game logic to allow for clean procedural code.
 
+```javascript
+  move(newPos, delay) {
+    this.pos = newPos;
+    this.div.data = newPos;
+    Jewel.movedJewels.push(this);
+    this.animateMove(newPos, delay);
+  }
+
+  animateMove(newPos, delay) {
+    setTimeout(() => {
+      this.div.style.left = `${newPos.px().x}px`;
+      this.div.style.top = `${newPos.px().y}px`;
+    }, delay);
+  }
+```
 
 ### Future directions
 
