@@ -7,6 +7,7 @@ body {
   overflow: hidden;
   height: 100%;
   width: 100%;
+  z-index: -1;
 }
 
 main {
@@ -145,7 +146,6 @@ main > div {
 .icons {
   display: flex;
   justify-content: center;
-  position: fixed;
   bottom: 3%;
   right: 0px;
   left: 0px;
@@ -158,6 +158,10 @@ main > div {
   font-size: 23px;
   border-radius: 50%;
   box-shadow: 1px 0px 1px #484848;
+}
+
+.icons > li > a:hover {
+  box-shadow: 0px 0px 0px #484848;
 }
 
 .icons > li > a > .label {
@@ -224,15 +228,12 @@ main > div {
 }
 
 .modal-box {
+  position: relative;
   font-size: 22px;
   font-family: cursive;
   width: 300px;
   height: 300px;
-  background-color: white;
-  margin: 12% 41%;
-  width: 300px;
-  height: 200px;
-  margin: 12% 41%;
+  margin: 22% auto;
   background-color: #b8987c;
   color: #663300;
   border-radius: 20px;
@@ -247,7 +248,7 @@ main > div {
 
 .modal-box > .logo-container- {
   width: 495px;
-  position: relative;
-  left: -106px;
-  top: -48px;
+  position: absolute;
+  left: -67px;
+  top: -50px;
 }
