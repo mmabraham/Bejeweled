@@ -111,23 +111,30 @@ main > div {
 }
 
 .progress-bar-container {
-  background-image: url('../images/chest_bottom.png');
-  background-repeat: round;
   height: 243px;
   width: 769px;
   position: absolute;
   bottom: -220px;
   left: -20px;
+}
+
+.progress-bar-backdrop {
+  background-image: url(../images/chest_bottom.png);
+  background-repeat: round;
+  height: 243px;
+  width: 769px;
   z-index: -1;
   opacity: 0.37;
 }
 
 .progress-bar {
+  position: absolute;
+  top: 145px;
+  left: 66px;
   width: 620px;
   height: 30px;
   padding: 4px;
   border-radius: 60px;
-  margin: 141px auto;
   border: 3px solid goldenrod;
 }
 
@@ -141,7 +148,7 @@ main > div {
 }
 
 #progress.changing {
-  background-color: purple;
+  background-color: #0a790f;
 }
 
 #points {
