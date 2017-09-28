@@ -125,6 +125,8 @@ main > div {
 .progress-bar {
   width: 620px;
   height: 30px;
+  padding: 4px;
+  border-radius: 60px;
   margin: 141px auto;
   border: 3px solid goldenrod;
 }
@@ -132,6 +134,8 @@ main > div {
 #progress {
   background: #0fe018;
   height: 100%;
+  min-width: 30px;
+  border-radius: 900px;
   width: 0%;
   transition: background-color 0.3s ease;
 }
