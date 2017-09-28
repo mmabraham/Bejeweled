@@ -29,14 +29,14 @@ main > div {
 }
 
 .controls {
-  height: 100%;
-  min-height: 500px;
+  position: fixed;
+  left: -3px;
+  height: 500px;
   width: 130px;
   z-index: 0;
   border: 3px solid goldenrod;
   box-shadow: 1px 1px 1px grey;
   background: #b8987c;
-  margin-right: 20px;
 }
 
 #grid {
@@ -111,11 +111,10 @@ main > div {
 }
 
 .progress-bar-container {
-  height: 243px;
-  width: 769px;
   position: absolute;
   bottom: -220px;
-  left: -20px;
+  left: -109px;
+  z-index: -1;
 }
 
 .progress-bar-backdrop {
@@ -123,7 +122,6 @@ main > div {
   background-repeat: round;
   height: 243px;
   width: 769px;
-  z-index: -1;
   opacity: 0.37;
 }
 
